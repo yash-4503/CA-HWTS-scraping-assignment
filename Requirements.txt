@@ -1,1 +1,7 @@
+This lists all the Python dependencies required to run the project. It includes:
 
+selenium: to perform browser automation and page interaction.
+
+webdriver-manager: to automatically manage the installation and updating of ChromeDriver.
+
+pandas: to handle data loading from CSV and saving the final output in a structured tabular format. This ensures that anyone can recreate the environment with a single pip install -r requirements.txt.
