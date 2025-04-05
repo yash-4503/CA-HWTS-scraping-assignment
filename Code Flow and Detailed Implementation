@@ -3,8 +3,35 @@ Step-by-step Breakdown:
 Environment Setup
 The user installs the dependencies from requirements.txt. Once installed, the script can be executed on any machine with Python and Chrome installed.
 
+import time
+import logging
+import pandas as pd
+from selenium import webdriver
+from selenium.webdriver.chrome.service import Service
+from selenium.webdriver.common.by import By
+from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+from webdriver_manager.chrome import ChromeDriverManager
+
+# Configure logging
+logging.basicConfig(
+    level=logging.INFO, 
+    format="%(asctime)s - %(levelname)s - %(message)s"
+)
+
 Load EPA_IDs
 The script reads two CSV files and merges the EPA_IDs using Pandas, ensuring uniqueness to avoid redundant scraping.
+
+def load_epa_ids(file_path):
+    try:
+        df = pd.read_csv(file_path)
+        epa_ids = df['EPA_ID'].drop_duplicates().tolist()
+        logging.info(f"Loaded {len(epa_ids)} EPA_IDs from {file_path}")
+        return epa_ids
+    except Exception as e:
+        logging.error(f"Error loading EPA_IDs from {file_path}: {e}")
+        return []
 
 Configure Selenium
 Selenium is set to run in headless mode so it doesn’t launch a visible browser window — this makes it lightweight and suitable for automation or server environments.
