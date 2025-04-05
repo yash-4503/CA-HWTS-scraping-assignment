@@ -1,0 +1,8 @@
+Purpose:
+The solution logs key events (e.g., successful data loads, errors during scraping) to the console. This logging makes it easier to troubleshoot issues or understand the progress of the script.
+
+Key Points:
+
+Errors in loading CSVs or scraping details are captured and logged.
+
+The script does not crash on encountering an error for one EPA_ID; it logs the error and continues with the next.
