@@ -1,0 +1,6 @@
+Scalable & Modular Code: The script is cleanly modularized to allow easy extension (e.g., adding more fields later).
+
+Reusable Template: This pattern of scraping (load IDs → construct URLs → extract structured fields) is a commonly reusable structure in enterprise scraping tasks.
+
+Error Tolerance: Even if some facilities fail due to structural issues or page timeouts, the scraper continues, ensuring partial success rather than a full crash.
+
