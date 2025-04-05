@@ -1,0 +1,14 @@
+This document has detailed every step taken in the CA HWTS scraping assignment. We covered:
+
+Project Overview:
+Understanding the task and its goals.
+
+Repository Structure:
+The organization of files (README, requirements, and main script).
+
+Detailed Code Explanation:
+Step-by-step walkthrough of logging, data loading, Selenium configuration, scraping logic, error handling, and data output.
+
+Final Output:
+The solution outputs a CSV file (hwts_facilities_output.csv) containing the scraped facility data.
+
