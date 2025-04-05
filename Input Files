@@ -1,0 +1,4 @@
+active_facilities.csv
+
+inactive_facilities.csv
+These are downloaded manually from the ArcGIS Open Data site as instructed in the requirement. They contain the source EPA_IDs which are the primary keys for scraping the target pages.
