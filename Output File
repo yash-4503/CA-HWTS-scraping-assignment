@@ -1,0 +1,10 @@
+hwts_facilities_output.csv
+This file is generated after the script runs. It contains the final scraped data including:
+
+EPA_ID
+
+Facility Name
+
+Address
+
+Source URL
