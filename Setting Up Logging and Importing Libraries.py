@@ -18,5 +18,5 @@ logging.basicConfig(
     format="%(asctime)s - %(levelname)s - %(message)s"
 )
 
-Explanation:
-This block sets up logging to print timestamps, log levels, and messages. It also imports all the libraries that will be used throughout the script.
+##Explanation:
+##This block sets up logging to print timestamps, log levels, and messages. It also imports all the libraries that will be used throughout the script.
